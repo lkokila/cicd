@@ -36,5 +36,15 @@ pipeline {
                 """
             }
         }
+        
+         stage('Automated test in "Live" Environment') {
+            steps {
+                sh """
+                echo "Initiating Test"
+                echo "Test In progress"
+                echo "Test completed"
+                """
+            }
+        }
     }   
 }
