@@ -32,7 +32,7 @@ pipeline {
             steps {
                 sh """
                 apictl login live -u admin -p admin -k
-                apictl vcs deploy -e live
+                apictl vcs deploy -e live -k
                 """
             }
         }
