@@ -1,0 +1,22 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+      sandbox:
+  - name: live
+    endpoints:
+      production:
+      sandbox:
+  - name: localdev
+    endpoints:
+      production:
+      sandbox:
+  - name: localtest
+    endpoints:
+      production:
+      sandbox:
+
+deploy:
+  import:
+    update: true
+    preserveProvider: true
